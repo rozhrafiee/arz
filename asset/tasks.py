@@ -22,8 +22,8 @@ def check_currency_change(currency_id, alert_value):
             send_mail(
                 'Currency Alert',
                 message,
-                'your_email@example.com',
-                ['recipient@example.com'],
+                'mahansepanloooo@gmail.com.com',
+                ['rozhinarafiee014@gmail.com.com'],
                 fail_silently=False,
             )
         else:
@@ -31,8 +31,8 @@ def check_currency_change(currency_id, alert_value):
             send_mail(
                 'Currency Alert',
                 message,
-                'your_email@example.com',
-                ['recipient@example.com'],
+                'mahansepanloooo@gmail.com.com',
+                ['rozhinarafiee014@gmail.com.com'],
                 fail_silently=False,
             )
     except Currency.DoesNotExist:
