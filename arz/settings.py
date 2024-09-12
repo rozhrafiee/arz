@@ -130,13 +130,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CELERY_BROKER_URL = 'amqp://localhost'
 
 CELERY_ROUTES = {
-    'bus_app.tasks.send_email_to_customer': {'queue': 'celery'},
+    'bus_app.tasks.check_currency_change': {'queue': 'celery'},
 }
 
 CELERY_BEAT_SCHEDULE = {
     'send_email_to_admin':
         {
-            'task': 'bus_app.tasks.send_email_to_admin',
+            'task': 'bus_app.tasks.check_currency_change',
             'schedule': timedelta(hours=5),
         }
 }
